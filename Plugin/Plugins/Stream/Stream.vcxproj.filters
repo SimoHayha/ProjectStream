@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Bass">
+      <UniqueIdentifier>{0759465c-4bef-4ca8-a9e1-85916445d1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pthread">
+      <UniqueIdentifier>{c47457f3-19f8-4822-99db-399714dfd837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\StreamAPI">
+      <UniqueIdentifier>{e5d3aaec-c4bf-43a2-9ad9-ca15033c3c3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\StreamAPI">
+      <UniqueIdentifier>{d8b8a958-6a04-40e0-b2d5-b110753849e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\StreamAPI\BassHandler">
+      <UniqueIdentifier>{270f0dec-8e03-4763-9e85-91451f9e672b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\StreamAPI\GroovesharkHandler">
+      <UniqueIdentifier>{0b5672ed-68a2-43ab-97de-6d25f6b09ba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\CLR">
+      <UniqueIdentifier>{3fbf5342-ac2c-459e-a4e7-753bbbc8feb8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bass.h">
+      <Filter>Header Files\Bass</Filter>
+    </ClInclude>
+    <ClInclude Include="pthread.h">
+      <Filter>Header Files\pthread</Filter>
+    </ClInclude>
+    <ClInclude Include="sched.h">
+      <Filter>Header Files\pthread</Filter>
+    </ClInclude>
+    <ClInclude Include="semaphore.h">
+      <Filter>Header Files\pthread</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamAPIRoot.h">
+      <Filter>Header Files\StreamAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="CLRHelper.hpp">
+      <Filter>Header Files\CLR</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="pthreadVC2.lib" />
+    <Library Include="pthreadVCE2.lib" />
+    <Library Include="pthreadVSE2.lib" />
+    <Library Include="bass.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StreamAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamAPIRoot.cpp">
+      <Filter>Source Files\StreamAPI</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
